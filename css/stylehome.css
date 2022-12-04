@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 4px;
+    height: 703px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home::before {
+    content: "";
+    background: url('../img/bg.jpg')no-repeat center center/cover;
+    /*.. to come out of the file*/
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 800px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#home h1{
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Bree Serif', serif;
+}

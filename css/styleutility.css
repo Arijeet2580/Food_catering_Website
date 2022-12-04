@@ -1,0 +1,31 @@
+/* home utility clasees */
+*{
+    margin: 0;
+    padding: 0;
+}
+.primary-h{
+    font-size: 3rem;
+    padding: 12px;
+}
+.btn{
+    padding: 3px 18px;
+    color: white;
+    font-family: 'Bree Serif', serif;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px;
+    background-color: rgba(149, 78, 78, 0.671);
+    border: 3px solid white;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: brown;
+}
+/* services utility classes */
+.h-secondary{
+    font-size:1.8rem;
+    padding: 10px;
+}
+.center{
+    text-align: center;
+}

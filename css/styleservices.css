@@ -1,0 +1,21 @@
+#services{
+    display: flex;
+    margin: 30px;
+}
+#services .box{
+    border: 3px solid brown;
+    padding: 38px;
+    margin: 15px;
+    border-radius: 20px;
+    background-color:#ff540069;
+}
+#services .box img{
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+}
