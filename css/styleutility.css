@@ -29,3 +29,10 @@
 .center{
     text-align: center;
 }
+#onlinebtn{
+    background-color: transparent;
+}
+#onlinebtn:hover{
+    background-color: white;
+    color:black;
+}
