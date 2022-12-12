@@ -7,20 +7,6 @@
     font-size: 3rem;
     padding: 12px;
 }
-.btn{
-    padding: 3px 18px;
-    color: white;
-    font-family: 'Bree Serif', serif;
-    cursor: pointer;
-    font-size: 20px;
-    margin: 20px;
-    background-color: rgba(149, 78, 78, 0.671);
-    border: 3px solid white;
-    border-radius: 10px;
-}
-.btn:hover{
-    background-color: brown;
-}
 /* services utility classes */
 .h-secondary{
     font-size:1.8rem;
@@ -29,10 +15,23 @@
 .center{
     text-align: center;
 }
-#onlinebtn{
-    background-color: transparent;
+.btn{
+    padding: 10px 40px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: white;
+    background-color: rgb(512, 50, 65);
+    border: 2px solid white;
+    border-radius: 10px;
 }
-#onlinebtn:hover{
+.btn:hover{
     background-color: white;
-    color:black;
+    color: black;
+}
+#btn2{
+    margin-left: 100px;
+}
+.orderbutton{
+    margin-top: 75px;
 }
