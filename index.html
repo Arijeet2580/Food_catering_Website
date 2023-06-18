@@ -7,37 +7,37 @@
     <title>MYOnlinemeals.com</title>
     <!-- style sheets -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <!-- <link rel="stylesheet" href="css/home.css" /> -->
-    <link rel="stylesheet" href="css/services.css" />
-    <!-- <link rel="stylesheet" href="css/utility.css" /> -->
-    <link rel="stylesheet" href="css/clientsec.css" />
-    <link rel="stylesheet" href="css/contact.css" />
-    <link rel="stylesheet" href="css/footer.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Bree+Serif&display=swap"
       rel="stylesheet"
     />
     <!-- Suggestion to use media queries instead of the following code -->
-    <!-- <link
+    <link
       rel="stylesheet"
       media="screen and (max-width:957px)"
-      href="css/phone.css"
-    /> -->
+      href="responsive-css-files/phone.css"
+    />
   </head>
 
   <body>
     <!-- Naviagation bar section -->
     <nav class="navbar flex">
-      <div id="logo">
+      <div class="logo">
         <a href="#home">
-          <img src="assets/logo.jpg" alt="MYOnlinemeals.com"/></a>
+          <img src="assets/logo.jpg" alt="MYOnlinemeals.com" class="logo-img"
+        /></a>
       </div>
       <ul class="flex">
         <li class="item"><a href="#home" class="primary-btn">Home</a></li>
-        <li class="item"><a href="#service-container" class="primary-btn">Services</a></li>
-        <li class="item"><a href="#client-section" class="primary-btn">About us</a></li>
-        <li class="item"><a href="#contact" class="primary-btn">Contact us</a></li>
+        <li class="item">
+          <a href="#service-container" class="primary-btn">Services</a>
+        </li>
+        <li class="item">
+          <a href="#client-section" class="primary-btn">About us</a>
+        </li>
+        <li class="item">
+          <a href="#contact" class="primary-btn">Contact us</a>
+        </li>
         <li class="item" id="online">
           <a href="https://www.zomato.com" class="primary-btn">Order Online</a>
         </li>
@@ -51,79 +51,97 @@
       </div>
     </nav>
     <!--Home section  -->
-    <section id="home">
+    <section class="home">
       <h1 class="home-heading">Welcome to MYOnlinemeals.com</h1>
-      <p  class="home-para">
+      <p class="home-para">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit Lorem ipsum
         dolor sit amet.
       </p>
-      <p class="home-para">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      <div class="home-btn-section flex"style="margin-top: 75px;">
+      <p class="home-para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <div class="home-btn-section flex" style="margin-top: 75px">
         <a href="#" class="Secondary-btn flex">Book a table</a>
         <a href="#" class="Secondary-btn flex">Takeaway</a>
       </div>
     </section>
     <!-- Service section -->
     <section id="service-container">
-      <h1>Our services</h1>
-      <div id="services">
-        <div class="box">
-          <img src="assets/pizza.jpg" alt="" />
-          <h2>Food Ordering</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non Lorem
-            ipsum dolor sit amet, consectetur adipisicing elit. Sapiente,
-            repellendus! Iure eius ut sequi vitae placeat, delectus aperiam unde
-            possimus ratione magni, enim optio ab officiis laborum voluptatem
-            suscipit. Voluptas sed cum architecto perspiciatis rem provident
-            cupiditate exercitationem delectus, necessitatibus dicta blanditiis
-            veniam consequatur ex. Soluta perferendis corrupti harum id.
-          </p>
+      <h1 class="service-header">Our services</h1>
+      <div id="services flex">
+        <div class="box flex">
+          <div class="left-side">
+            <img src="assets/pizza.jpg" alt="" class="left-image" />
+          </div>
+          <div class="right-text">
+            <h2 class="service-box-header">Food Ordering</h2>
+            <p class="services-para">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Sapiente, repellendus! Iure eius ut sequi vitae placeat, delectus
+              aperiam unde possimus ratione magni, enim optio ab officiis
+              laborum voluptatem suscipit. Voluptas sed cum architecto
+              perspiciatis rem provident cupiditate exercitationem delectus,
+              necessitatibus dicta blanditiis veniam consequatur ex. Soluta
+              perferendis corrupti harum id.
+            </p>
+          </div>
         </div>
-        <div class="box">
-          <img src="assets/cater.jpg" alt="" />
-          <h2>Food catering</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non Lorem
-            ipsum dolor sit amet, consectetur adipisicing elit. Sapiente,
-            repellendus! Iure eius ut sequi vitae placeat, delectus aperiam unde
-            possimus ratione magni, enim optio ab officiis laborum voluptatem
-            suscipit. Voluptas sed cum architecto perspiciatis rem provident
-            cupiditate exercitationem delectus, necessitatibus dicta blanditiis
-            veniam consequatur ex. Soluta perferendis corrupti harum id.
-          </p>
+        <div class="box flex" style="flex-direction: row-reverse">
+          <div class="left-side">
+            <img src="assets/cater.jpg" alt="" class="left-image" />
+          </div>
+          <div class="right-text">
+            <h2 class="service-box-header">Food catering</h2>
+            <p class="services-para">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Sapiente, repellendus! Iure eius ut sequi vitae placeat, delectus
+              aperiam unde possimus ratione magni, enim optio ab officiis
+              laborum voluptatem suscipit. Voluptas sed cum architecto
+              perspiciatis rem provident cupiditate exercitationem delectus,
+              necessitatibus dicta blanditiis veniam consequatur ex. Soluta
+              perferendis corrupti harum id.
+            </p>
+          </div>
         </div>
-        <div class="box">
-          <img src="assets/delivery.jpg" alt="" />
-          <h2>Bulk Ordering</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non Lorem
-            ipsum dolor sit amet, consectetur adipisicing elit. Sapiente,
-            repellendus! Iure eius ut sequi vitae placeat, delectus aperiam unde
-            possimus ratione magni, enim optio ab officiis laborum voluptatem
-            suscipit. Voluptas sed cum architecto perspiciatis rem provident
-            cupiditate exercitationem delectus, necessitatibus dicta blanditiis
-            veniam consequatur ex. Soluta perferendis corrupti harum id.
-          </p>
+        <div class="box flex">
+          <div class="left-side">
+            <img src="assets/delivery.jpg" alt="" class="left-image" />
+          </div>
+          <div class="right-text">
+            <h2 class="service-box-header">Bulk Ordering</h2>
+            <p class="services-para">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Sapiente, repellendus! Iure eius ut sequi vitae placeat, delectus
+              aperiam unde possimus ratione magni, enim optio ab officiis
+              laborum voluptatem suscipit. Voluptas sed cum architecto
+              perspiciatis rem provident cupiditate exercitationem delectus,
+              necessitatibus dicta blanditiis veniam consequatur ex. Soluta
+              perferendis corrupti harum id.
+            </p>
+          </div>
         </div>
       </div>
     </section>
     <!-- Client section -->
-    <section id="client-section">
+    <section class="client-section">
       <h1>Our clients</h1>
-      <div id="clients">
-        <div class="client-item">
-          <img src="assets/1.webp" alt="Our client" />
-          <img src="assets/2.png" alt="Our client" />
-          <img src="assets/1.webp" alt="Our client" />
-          <img src="assets/2.png" alt="Our client" />
-        </div>
+      <div class="client-item flex">
+        <img src="assets/1.webp" alt="Our client" />
+        <img src="assets/1.webp" alt="Our client" />
+        <img src="assets/1.webp" alt="Our client" />
+        <img src="assets/1.webp" alt="Our client" />
+        <img src="assets/1.webp" alt="Our client" />
+        <img src="assets/1.webp" alt="Our client" />
+        <img src="assets/1.webp" alt="Our client" />
       </div>
     </section>
     <!-- Contact section -->
-    <section id="contact">
+    <section class="contact">
       <h1>Contact Us</h1>
-      <div id="contact-box">
+      <div class="contact-box">
         <form action="">
           <div class="form-group">
             <label for="name">Name:</label>
@@ -158,13 +176,14 @@
           </div>
         </form>
       </div>
+      <footer class="flex">
+        <p>Copyright &copy; MYOnlinemeals.com: All rights reserved</p>
+      </footer>
     </section>
     <!-- Scroll back section -->
     <button id="scrollback">&#x2191;</button>
     <!-- Footer section -->
-    <footer>
-      <div>Copyright &copy; >MYOnlinemeals.com: All rights reserved</div>
-    </footer>
+
     <!-- JS LINKS  -->
     <script src="./script.js"></script>
   </body>
