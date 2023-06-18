@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MYOnlinemeals.com</title>
     <!-- style sheets -->
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/home.css" />
+    <!-- <link rel="stylesheet" href="css/home.css" /> -->
     <link rel="stylesheet" href="css/services.css" />
-    <link rel="stylesheet" href="css/utility.css" />
+    <!-- <link rel="stylesheet" href="css/utility.css" /> -->
     <link rel="stylesheet" href="css/clientsec.css" />
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/footer.css" />
@@ -18,25 +19,27 @@
       rel="stylesheet"
     />
     <!-- Suggestion to use media queries instead of the following code -->
-    <link
+    <!-- <link
       rel="stylesheet"
       media="screen and (max-width:957px)"
       href="css/phone.css"
-    />
+    /> -->
   </head>
 
   <body>
-    <nav id="navbar">
+    <!-- Naviagation bar section -->
+    <nav class="navbar flex">
       <div id="logo">
-        <a href="#home"><img src="img/logo.jpg" alt="MYOnlinemeals.com" /></a>
+        <a href="#home">
+          <img src="assets/logo.jpg" alt="MYOnlinemeals.com"/></a>
       </div>
-      <ul>
-        <li class="item"><a href="#home">Home</a></li>
-        <li class="item"><a href="#service-container">Services</a></li>
-        <li class="item"><a href="#client-section">About us</a></li>
-        <li class="item"><a href="#contact">Contact us</a></li>
+      <ul class="flex">
+        <li class="item"><a href="#home" class="primary-btn">Home</a></li>
+        <li class="item"><a href="#service-container" class="primary-btn">Services</a></li>
+        <li class="item"><a href="#client-section" class="primary-btn">About us</a></li>
+        <li class="item"><a href="#contact" class="primary-btn">Contact us</a></li>
         <li class="item" id="online">
-          <a href="https://www.zomato.com">Order Online</a>
+          <a href="https://www.zomato.com" class="primary-btn">Order Online</a>
         </li>
       </ul>
       <div class="container">
@@ -47,27 +50,27 @@
         </div>
       </div>
     </nav>
-
+    <!--Home section  -->
     <section id="home">
-      <h1 class="primary-h">Welcome to MYOnlinemeals.com</h1>
-      <p>
+      <h1 class="home-heading">Welcome to MYOnlinemeals.com</h1>
+      <p  class="home-para">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit Lorem ipsum
         dolor sit amet.
       </p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      <div class="orderbutton">
-        <button class="btn">BOOK A TABLE</button>
-        <button class="btn" id="btn2">TAKEAWAY</button>
+      <p class="home-para">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="home-btn-section flex"style="margin-top: 75px;">
+        <a href="#" class="Secondary-btn flex">Book a table</a>
+        <a href="#" class="Secondary-btn flex">Takeaway</a>
       </div>
     </section>
-
+    <!-- Service section -->
     <section id="service-container">
-      <h1 class="primary-h center">Our services</h1>
+      <h1>Our services</h1>
       <div id="services">
         <div class="box">
-          <img src="img/pizza.jpg" alt="" />
-          <h2 class="center h-secondary">Food Ordering</h2>
-          <p class="center">
+          <img src="assets/pizza.jpg" alt="" />
+          <h2>Food Ordering</h2>
+          <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non Lorem
             ipsum dolor sit amet, consectetur adipisicing elit. Sapiente,
             repellendus! Iure eius ut sequi vitae placeat, delectus aperiam unde
@@ -78,9 +81,9 @@
           </p>
         </div>
         <div class="box">
-          <img src="img/cater.jpg" alt="" />
-          <h2 class="center h-secondary">Food catering</h2>
-          <p class="center">
+          <img src="assets/cater.jpg" alt="" />
+          <h2>Food catering</h2>
+          <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non Lorem
             ipsum dolor sit amet, consectetur adipisicing elit. Sapiente,
             repellendus! Iure eius ut sequi vitae placeat, delectus aperiam unde
@@ -91,9 +94,9 @@
           </p>
         </div>
         <div class="box">
-          <img src="img/delivery.jpg" alt="" />
-          <h2 class="center h-secondary">Bulk Ordering</h2>
-          <p class="center">
+          <img src="assets/delivery.jpg" alt="" />
+          <h2>Bulk Ordering</h2>
+          <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non Lorem
             ipsum dolor sit amet, consectetur adipisicing elit. Sapiente,
             repellendus! Iure eius ut sequi vitae placeat, delectus aperiam unde
@@ -105,20 +108,21 @@
         </div>
       </div>
     </section>
-
+    <!-- Client section -->
     <section id="client-section">
-      <h1 class="primary-h center">Our clients</h1>
+      <h1>Our clients</h1>
       <div id="clients">
         <div class="client-item">
-          <img src="img/1.webp" alt="Our client" />
-          <img src="img/2.png" alt="Our client" />
-          <img src="img/1.webp" alt="Our client" />
-          <img src="img/2.png" alt="Our client" />
+          <img src="assets/1.webp" alt="Our client" />
+          <img src="assets/2.png" alt="Our client" />
+          <img src="assets/1.webp" alt="Our client" />
+          <img src="assets/2.png" alt="Our client" />
         </div>
       </div>
     </section>
+    <!-- Contact section -->
     <section id="contact">
-      <h1 class="primary-h center">Contact Us</h1>
+      <h1>Contact Us</h1>
       <div id="contact-box">
         <form action="">
           <div class="form-group">
@@ -155,12 +159,13 @@
         </form>
       </div>
     </section>
+    <!-- Scroll back section -->
     <button id="scrollback">&#x2191;</button>
+    <!-- Footer section -->
     <footer>
-      <div class="center">
-        Copyright &copy; >MYOnlinemeals.com: All rights reserved
-      </div>
+      <div>Copyright &copy; >MYOnlinemeals.com: All rights reserved</div>
     </footer>
+    <!-- JS LINKS  -->
     <script src="./script.js"></script>
   </body>
 </html>

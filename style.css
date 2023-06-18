@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    overflow-x: hidden;
+}
+:root{
+    --primary-text-color:aliceblue;
+}
+/* Utility section */
+.flex{
+    display: flex;
+}
+.grid{
+    display: grid;
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+h2{
+    font-size:2rem;
+    text-align: center;
+}
+p{
+    font-size: 1.3rem;
+    text-align: center;
+}
+a{
+    font-size: 1.2rem;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+.primary-btn{
+    color: var(--primary-text-color);
+    display: block;
+    padding:4px 10px;
+}
+.primary-btn:hover{
+    color: black;
+    background-color: beige;
+    border-radius: 10px;
+}
+.home-btn-section{
+    flex-basis: 10%;
+    justify-content: center;
+    gap: 40px;
+}
+.Secondary-btn{
+    border: 2px solid white;
+    align-items: center;
+    padding-inline: 10px;
+    font-weight: 700;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(512, 50, 65);
+}
+.Secondary-btn:hover{
+    background-color:var(--primary-text-color);
+    color: black;
+    transition: 0.8s ease-out;
+}
+/* Navbar section */
+.navbar{
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+.navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#logo{
+    margin: 3px 6px;
+    padding: 9px;
+}
+#logo img{
+    block-size: 60px;
+    border-radius: 60px;
+}
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 4px;
+    height: 703px;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-text-color);
+    font-family: 'Bree Serif', serif;
+}
+
+#home::before {
+    content: "";
+    background: url('assets/bg.jpg') no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 800px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}

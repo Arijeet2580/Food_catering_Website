@@ -13,7 +13,7 @@
 
 #home::before {
     content: "";
-    background: url('../img/bg.jpg')no-repeat center center/cover;
+    background: url('../assets/bg.jpg')no-repeat center center/cover;
     /*.. to come out of the file*/
     position: absolute;
     top: 0px;
