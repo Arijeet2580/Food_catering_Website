@@ -1,6 +1,6 @@
 // Select HTML elements
 const navMenu = document.getElementsByClassName("container__menu")[0];
-const navLinks = document.querySelectorAll("#navbar ul li a");
+const navLinks = document.querySelectorAll(".primary-btn ");
 const scrollback = document.getElementById("scrollback");
 
 // Implement callback function to toggle class

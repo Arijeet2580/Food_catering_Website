@@ -22,11 +22,11 @@ h1 {
   text-align: center;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 a {
@@ -37,6 +37,7 @@ a {
   color: var(--primary-text-color);
   display: block;
   padding: 4px 10px;
+  font-size: 2rem;
 }
 .primary-btn:hover {
   color: black;
@@ -56,6 +57,7 @@ a {
   color: white;
   border-radius: 10px;
   background-color: rgb(512, 50, 65);
+  font-size: 2rem;
 }
 .Secondary-btn:hover {
   background-color: var(--primary-text-color);
@@ -64,6 +66,8 @@ a {
 }
 /* Navbar section */
 .navbar {
+  align-items: center;
+  justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0px;
@@ -85,7 +89,7 @@ a {
   padding: 9px;
 }
 .logo-img {
-  block-size: 60px;
+  block-size: 120px;
   border-radius: 60px;
 }
 /* Home section */
@@ -145,6 +149,9 @@ a {
   font-family: var(--font-family-2);
   text-align: start;
 }
+#service-box-2{
+  flex-direction: row-reverse
+}
 /* Client section */
 .client-section {
   height: 450px;
@@ -181,10 +188,9 @@ a {
   opacity: 0.5;
 }
 .contact-box {
-  display: flex;
   width: 100%;
-  justify-content: center;
-  align-items: center;
+  justify-content:center;
+  padding-top: 40px;
 }
 .contact-box input,
 .contact textarea {
@@ -192,12 +198,11 @@ a {
   padding: 0.5rem;
 }
 .contact-box form {
-  width: 40%;
+  width: 80%;
 }
 .contact-box form label {
   display: block;
-  font-size: 1.3rem;
-  font-family: "Bree Serif", serif;
+  font-size: 2rem;
 }
 #scrollback {
     position: fixed;
@@ -225,4 +230,3 @@ a {
     font-family: "Bree Serif", serif;
     justify-content: center;
   }
-    

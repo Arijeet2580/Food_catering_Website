@@ -1,12 +1,14 @@
+/* Utility section */
+.primary-btn {
+  font-size: 1.2rem;
+  text-align: center;
+  display: none;
+}
+.Secondary-btn {
+  padding: 10px;
+  font-size: 1.5rem;
+}
 /* Navigation section */
-#navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.primary-btn{
-  font-size: 1rem;
-}
 .container {
   display: flex;
   flex: 1;
@@ -39,35 +41,20 @@
   display: block !important;
 }
 /* Home section */
-#home {
+.home {
   height: 318px;
-  flex-direction: column;
-  padding: 0px 5px;
+  padding-inline: 50px;
 }
-#home::before {
-  height: 470px;
+.home::before {
+  height: 540px;
 }
-.home-para{
-  font-size: 1.1rem;
+.home-para {
+  font-size: 1.7rem;
 }
 /* services section */
-.service-header{
+.service-header {
   margin-top: 100px;
 }
-#services {
-  flex-direction: column;
-}
-/* client section */
-#clients {
-  flex-wrap: wrap;
-}
-#clients img {
-  width: 66px;
-  padding: 2px 6px;
-}
-/* media queries */
-@media screen and (max-width: 957px) {
-  .primary-btn {
-    display: none;
-  }
+.services-para {
+  font-size: 1.4rem;
 }

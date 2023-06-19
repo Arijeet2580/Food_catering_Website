@@ -1,0 +1,24 @@
+h1 {
+  font-size: 1rem;
+  text-align: center;
+}
+p {
+  font-size: 0.8rem;
+  text-align: start;
+}
+.primary-btn {
+  font-size: 0.5rem;
+}
+.primary-btn:hover {
+  color: black;
+  background-color: beige;
+  border-radius: 10px;
+}
+.home-btn-section {
+  justify-content: center;
+  gap: 40px;
+}
+.Secondary-btn {
+  font-size: 0.5rem;
+}
+/* Home section */

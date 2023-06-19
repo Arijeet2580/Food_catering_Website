@@ -12,23 +12,22 @@
       rel="stylesheet"
     />
     <!-- Suggestion to use media queries instead of the following code -->
-    <link
-      rel="stylesheet"
-      media="screen and (max-width:957px)"
-      href="responsive-css-files/phone.css"
-    />
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="responsive-css-files/tablet.css"/>
+    <link rel="stylesheet" media="screen and (max-width: 425px)" href="responsive-css-files/L-mobile.css">
+    <link rel="stylesheet" media="screen and (max-width: 375px)" href="responsive-css-files/M-mobile.css">
+    <link rel="stylesheet" media="screen and (max-width: 320px)" href="responsive-css-files/S-mobile.css">
   </head>
 
   <body>
     <!-- Naviagation bar section -->
     <nav class="navbar flex">
       <div class="logo">
-        <a href="#home">
+        <a href="#Home-section">
           <img src="assets/logo.jpg" alt="MYOnlinemeals.com" class="logo-img"
         /></a>
       </div>
-      <ul class="flex">
-        <li class="item"><a href="#home" class="primary-btn">Home</a></li>
+      <ul class="flex nav-list">
+        <li class="item"><a href="#Home-section" class="primary-btn">Home</a></li>
         <li class="item">
           <a href="#service-container" class="primary-btn">Services</a>
         </li>
@@ -36,13 +35,13 @@
           <a href="#client-section" class="primary-btn">About us</a>
         </li>
         <li class="item">
-          <a href="#contact" class="primary-btn">Contact us</a>
+          <a href="#contact-section" class="primary-btn">Contact us</a>
         </li>
         <li class="item" id="online">
           <a href="https://www.zomato.com" class="primary-btn">Order Online</a>
         </li>
       </ul>
-      <div class="container">
+      <div class="container flex" id="Three-bar">
         <div class="container__menu">
           <div class="bar1"></div>
           <div class="bar2"></div>
@@ -51,7 +50,7 @@
       </div>
     </nav>
     <!--Home section  -->
-    <section class="home">
+    <section class="home" id="Home-section">
       <h1 class="home-heading">Welcome to MYOnlinemeals.com</h1>
       <p class="home-para">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit Lorem ipsum
@@ -68,7 +67,7 @@
     <!-- Service section -->
     <section id="service-container">
       <h1 class="service-header">Our services</h1>
-      <div id="services flex">
+      <div class="services flex">
         <div class="box flex">
           <div class="left-side">
             <img src="assets/pizza.jpg" alt="" class="left-image" />
@@ -87,7 +86,7 @@
             </p>
           </div>
         </div>
-        <div class="box flex" style="flex-direction: row-reverse">
+        <div class="box flex" id ="Service-box-2">
           <div class="left-side">
             <img src="assets/cater.jpg" alt="" class="left-image" />
           </div>
@@ -126,55 +125,53 @@
       </div>
     </section>
     <!-- Client section -->
-    <section class="client-section">
+    <section class="client-section" id="client-section">
       <h1>Our clients</h1>
       <div class="client-item flex">
         <img src="assets/1.webp" alt="Our client" />
         <img src="assets/1.webp" alt="Our client" />
         <img src="assets/1.webp" alt="Our client" />
-        <img src="assets/1.webp" alt="Our client" />
-        <img src="assets/1.webp" alt="Our client" />
-        <img src="assets/1.webp" alt="Our client" />
+        <img src="assets/2.png" alt="Our client" />
+        <img src="assets/2.png" alt="Our client" />
+        <img src="assets/2.png" alt="Our client" />
         <img src="assets/1.webp" alt="Our client" />
       </div>
     </section>
     <!-- Contact section -->
-    <section class="contact">
+    <section class="contact" id="contact-section">
       <h1>Contact Us</h1>
-      <div class="contact-box">
-        <form action="">
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input
+      <div class="contact-box flex">
+          <form action="">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input
               type="text"
               name="name"
               id="name"
-              placeholder="Enter your Name"
-            />
-          </div>
-          <div class="form-group">
-            <label for="Email:">Email:</label>
-            <input
+              placeholder="Enter your Name"/>
+            </div>
+            <div class="form-group">
+              <label for="Email:">Email:</label>
+              <input
               type="text"
               name="Email"
               id="Email"
-              placeholder="Enter your Email"
-            />
-          </div>
-          <div class="form-group">
-            <label for="Phone Number">Phone Number:</label>
-            <input
+              placeholder="Enter your Email"/>
+            </div>
+            <div class="form-group">
+              <label for="Phone Number">Phone Number:</label>
+              <input
               type="text"
               name="Phone Number"
               id="Phone Number"
-              placeholder="Enter your Phone Number"
-            />
-          </div>
-          <div class="form-group">
-            <label for="Message">Message:</label>
-            <textarea name="Message" id="" cols="30" rows="10"></textarea>
-          </div>
-        </form>
+              placeholder="Enter your Phone Number"/>
+            </div>
+            <div class="form-group">
+              <label for="Message">Message:</label>
+              <textarea name="Message" cols="30" rows="10"></textarea>
+            </div>           
+          </form>
+        </div>
       </div>
       <footer class="flex">
         <p>Copyright &copy; MYOnlinemeals.com: All rights reserved</p>
