@@ -8,7 +8,7 @@ We'd also love PRs. If you're thinking of a large PR, we advise opening up an is
 
 ## How to Contribute
 
-- Take a look at the Existing [Issues](https://github.com/Arijeet2580/Arduino-Projects/issues) or create your own!
+- Take a look at the Existing [Issues](https://github.com/Arijeet2580/Food_catering_Website/issues) or create your own!
 - Fork the Repo and create a Branch for any Issue that you are working upon.
 - Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
 - Add Screenshots to help us know what this is all about.
