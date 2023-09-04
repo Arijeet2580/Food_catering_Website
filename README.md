@@ -20,13 +20,13 @@ We'd also love PRs. If you're thinking of a large PR, we advise opening up an is
 **2.** Clone the forked repository.
 
 ```
-   git clone https://github.com/Arijeet2580/Arduino-Projects.git
+   git clone https://github.com/Arijeet2580/Food_catering_Website.git
 ```
 
 **3.** Navigate to the project directory.
 
 ```
-   cd Arduino-Projects
+   cd Food_catering_Website
 ```
 
 **4.** Create a new branch:
