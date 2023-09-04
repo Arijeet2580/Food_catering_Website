@@ -1,5 +1,7 @@
 # Food_catering_Website
 This is a website development project consist of HTML and CSS 
+# ScreenShot how it looks
+![Screenshot 2023-09-04 145819](https://github.com/Arijeet2580/Food_catering_Website/assets/115724080/3d230195-377c-4063-b08e-f561c5d4ffaa)
 ## Issues and PRs
 
 If you have suggestions for how this project could be improved, or want to report a bug, open an issue! We'd love all and any contributions. If you have questions, too, we'd love to hear them.
